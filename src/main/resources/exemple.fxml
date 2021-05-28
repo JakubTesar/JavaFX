@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cz.educanet.gui.Controller">
+    <children>
+        <Text fontSmoothingType="LCD" layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Kalkulačka" wrappingWidth="224.0">
+            <font>
+                <Font name="System Bold" size="41.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btnSolve" layoutX="466.0" layoutY="72.0" mnemonicParsing="false" onAction="#onClickSolve"
+                text="Vypočítat"/>
+        <TextField fx:id="input1" layoutX="31.0" layoutY="72.0" onAction="#getInput1"/>
+        <TextField fx:id="input2" layoutX="290.0" layoutY="72.0" onAction="#getInput2"/>
+        <ComboBox fx:id="comboBoy" layoutX="211.0" layoutY="71.0" onAction="#onComboBoxClick" prefHeight="26.0"
+                  prefWidth="49.0"/>
+        <Text fx:id="solution" layoutX="31.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Výsledek:"
+              wrappingWidth="248.0000244140624">
+            <font>
+                <Font name="System Bold" size="26.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
